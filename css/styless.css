@@ -1,0 +1,255 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+body {
+    background-color: #e7e7e7;
+    line-height: 1.5;
+}
+
+h1, h2, h5 {
+    font-family: 'Orbitron', sans-serif;
+}
+
+p, a {
+    font-family: 'Roboto', sans-serif;
+}
+
+
+/* Re-utilizables */
+.container {
+    width: 80%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+.bg-header {
+    background-image: url("../assets/img/h-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 18.75rem;
+}
+
+.bg-navbar {
+    background-color: rgba(200, 88, 88, 0.23);
+    padding: 1rem 0;
+}
+
+@media (min-width: 768px) {
+    .bg-navbar {
+        padding: 4rem 0;
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.navbar-brand p {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .navbar-brand {
+        flex-direction: row;
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) {
+    .navbar-brand p {
+        margin-left: 0.5rem;
+    }
+}
+
+.navbar-brand img {
+    margin: 1rem 0 0rem 0;
+    width: 4rem; 
+}
+
+@media (min-width: 768px) {
+    .navbar-brand img {
+        margin: 0;
+        width: 5rem; 
+    }
+}
+
+.navbar-nav {
+    background-color: rgba(0, 0, 0, 0.753);
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+}
+
+.nav-links {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 0.3rem;
+}
+
+.nav-links:hover {
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+}
+
+/* Cards */
+.main {
+    background-color: #F2F2F2;
+    padding: 0.5rem;
+    margin-top: -2rem;
+    border-radius: 1rem;
+}
+
+.main-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin: 1rem;
+}
+
+@media (min-width: 768px) {
+    .noticias {
+        display: flex;
+        gap: 1rem;
+    }
+}
+
+.card {
+    background-color: #F25757;
+    color: white;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.card-2 {
+    background-color: #030759;
+    color: white;
+    overflow: hidden;
+    border-radius: 0.75rem;
+    margin-bottom: 1rem;
+}
+
+.card-img {
+    width: 100%;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
+}
+
+.card-body {
+    margin: 1rem;
+}
+
+.card-body h5 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-weight: 500;
+}
+
+.card-body p {
+    font-weight: 300;
+}
+
+
+/* Nosotros */
+.nosotros {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+    background-color: #B3005E;
+    border-radius: 0.5rem;
+    border-top: 0.5rem;
+    overflow: hidden;
+}
+
+.nosotros-col-img {
+    background-image: url(../assets/img/nosotros.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 21.85rem;
+    width: 100%;
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem;
+}
+
+.nosotros-col-text {
+    order: 1;
+}
+
+@media (min-width: 576px) {
+    .nosotros-col-img {
+        height: 31.25rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .nosotros {
+        flex-direction: row;
+    }
+
+    .nosotros-col-img {
+        order: 1;
+        flex: 1 1 0;
+    }
+
+    .nosotros-col-text {
+        order: 2;
+        flex: 1 1 0;
+    }
+}
+
+.nosotros-body {
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+
+.nosotros-body h2 {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.nosotros-body p {
+    font-weight: 300;
+}
+
+/* Footer */
+.bg-footer {
+    background-color: #030759;
+    padding: 0.25rem;
+    color: white;
+    text-align: center;
+}
+
+span {
+    font-weight: bolder;
+}
